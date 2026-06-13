@@ -38,15 +38,22 @@
 
 ## Sign Up Page
 
-![Login](screenshots/login.png)
+<img width="1783" height="900" alt="signup chat" src="https://github.com/user-attachments/assets/dfa1d9bd-b98c-4eb8-b0d6-1c3d8deb81fa" />
+
 
 ## Login Page
 
-![Signup](screenshots/signup.png)
+<img width="1769" height="900" alt="login chat" src="https://github.com/user-attachments/assets/12380e02-52db-40e4-ae04-ddc4b6d97cec" />
+
+
+## Image upload
+
+<img width="1787" height="900" alt="save profile chat " src="https://github.com/user-attachments/assets/585e61e9-b163-4fc2-a91b-a7d03cb18aeb" />
+
 
 ## Home Page
 
-![Home](screenshots/home.png)
+<img width="1846" height="900" alt="chat 1" src="https://github.com/user-attachments/assets/8d3d022e-0b31-4354-a1fe-2a7505596ad0" />
 
 ---
 
