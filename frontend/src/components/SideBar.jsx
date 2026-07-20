@@ -44,12 +44,12 @@ console.log(error)
     },[input])
   return (
     <div className={`lg:w-[30%] w-full h-full overflow-hidden lg:block bg-slate-200  relative ${!selectedUser?"block":"hidden"}`}>
-        <div className='w-[60px] h-[60px] mt-[10px] rounded-full overflow-hidden flex justify-center items-center bg-[#20c7ff] shadow-gray-500 text-gray-700 cursor-pointer shadow-lg fixed bottom-[20px] left-[10px]' onClick={handleLogOut}>
+        <div className='w-[60px] h-[60px] mt-[10px] rounded-full overflow-hidden flex justify-center items-center bg-[#3B82F6] shadow-gray-500 text-black cursor-pointer shadow-lg fixed bottom-[20px] left-[10px]' onClick={handleLogOut}>
    <BiLogOutCircle className='w-[25px] h-[25px]'/>
 </div>
 {input.length>0 && <div className='flex absolute top-[250px] bg-[white] w-full h-[500px] overflow-y-auto items-center pt-[20px] flex-col gap-[10px] z-[150] shadow-lg'>
 {searchData?.map((user)=>(
-     <div className='w-[95%] h-[70px] flex items-center gap-[20px]  px-[10px] hover:bg-[#78cae5] border-b-2 border-gray-400 cursor-pointer' onClick={()=>{
+     <div className='w-[95%] h-[70px] flex items-center gap-[20px]  px-[10px] hover:bg-gradient-to-r from-[#1E40AF] via-[#2563EB] to-[#3B82F6] border-b-2 border-gray-400 cursor-pointer' onClick={()=>{
         dispatch(setSelectedUser(user))
         setInput("")
         setSearch(false)
@@ -67,10 +67,10 @@ console.log(error)
 ))}
         </div> }
 
-      <div className='w-full h-[300px] bg-[#20c7ff] rounded-b-[30%] shadow-gray-400 shadow-lg flex flex-col justify-center px-[20px] '>
-    <h1 className='text-white font-bold text-[25px]'>chatly</h1>
+      <div className='w-full h-[300px] bg-gradient-to-br from-[#1E40AF] via-[#2563EB] to-[#3B82F6] rounded-b-[30%] shadow-gray-400 shadow-lg flex flex-col justify-center px-[20px] '>
+    <h1 className='text-white font-bold text-[25px]'>ConnectHub</h1>
    <div className='w-full flex justify-between items-center'>
-    <h1 className='text-gray-800 font-bold text-[25px]'>Hii , {userData.name || "user"}</h1>
+    <h1 className='text-white font-bold text-[25px]'>Hi , {userData.name || "user"}</h1>
     <div className='w-[60px] h-[60px] rounded-full overflow-hidden flex justify-center items-center bg-white cursor-pointer shadow-gray-500 shadow-lg' onClick={()=>navigate("/profile")}>
 <img src={userData.image || dp} alt="" className='h-[100%]'/>
 </div>
@@ -103,7 +103,7 @@ console.log(error)
 
       <div className='w-full h-[50%] overflow-auto flex flex-col gap-[20px] items-center mt-[20px]'>
 {otherUsers?.map((user)=>(
-    <div className='w-[95%] h-[60px] flex items-center gap-[20px] shadow-gray-500 bg-white shadow-lg rounded-full hover:bg-[#78cae5] cursor-pointer' onClick={()=>dispatch(setSelectedUser(user))}>
+    <div className='w-[95%] h-[60px] flex items-center gap-[20px] shadow-gray-500 bg-white shadow-lg rounded-full hover:bg-gradient-to-r from-[#1E40AF] via-[#2563EB] to-[#3B82F6] cursor-pointer' onClick={()=>dispatch(setSelectedUser(user))}>
     <div className='relative rounded-full shadow-gray-500 bg-white shadow-lg flex justify-center items-center mt-[10px]'>
     <div className='w-[60px] h-[60px]   rounded-full overflow-hidden flex justify-center items-center '>
     <img src={user.image || dp} alt="" className='h-[100%]'/>

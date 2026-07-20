@@ -47,20 +47,20 @@ try {
         <div className='fixed top-[20px] left-[20px] cursor-pointer' onClick={()=>navigate("/")}>
         <IoIosArrowRoundBack className='w-[50px] h-[50px] text-gray-600'/>
         </div>
-     <div className=' bg-white rounded-full border-4 border-[#20c7ff] shadow-gray-400 shadow-lg  relative' onClick={()=>image.current.click()}>
+     <div className=' bg-white rounded-full border-4 border-[#3B82F6] shadow-gray-400 shadow-lg  relative' onClick={()=>image.current.click()}>
 <div className='w-[200px] h-[200px] rounded-full overflow-hidden flex justify-center items-center'>
 <img src={frontendImage} alt="" className='h-[100%]'/>
 </div>
-<div className='absolute bottom-4  text-gray-700 right-4 w-[35px] h-[35px] rounded-full bg-[#20c7ff] flex justify-center items-center shadow-gray-400 shadow-lg'>
+<div className='absolute bottom-4  text-gray-700 right-4 w-[35px] h-[35px] rounded-full bg-[#3B82F6] flex justify-center items-center shadow-gray-400 shadow-lg'>
 <IoCameraOutline className=' text-gray-700  w-[25px] h-[25px]'/>
 </div>
      </div>
      <form className='w-[95%]  max-w-[500px] flex flex-col gap-[20px] items-center justify-center' onSubmit={handleProfile}>
         <input type="file" accept='image/*' ref={image} hidden onChange={handleImage}/>
-        <input type="text" placeholder="Enter your name" className='w-[90%] h-[50px] outline-none border-2 border-[#20c7ff] px-[20px] py-[10px] bg-[white] rounded-lg shadow-gray-400 shadow-lg text-gray-700 text-[19px]' onChange={(e)=>setName(e.target.value)} value={name}/>
-        <input type="text"  readOnly className='w-[90%] h-[50px] outline-none border-2 border-[#20c7ff] px-[20px] py-[10px] bg-[white] rounded-lg shadow-gray-400 shadow-lg text-gray-400 text-[19px]' value={userData?.userName}/>
-        <input type="email" readOnly className='w-[90%] h-[50px] outline-none border-2 border-[#20c7ff] px-[20px] py-[10px] bg-[white] rounded-lg shadow-gray-400 shadow-lg text-gray-400 text-[19px]' value={userData?.email}/>
-        <button className='px-[20px] py-[10px] bg-[#20c7ff] rounded-2xl shadow-gray-400 shadow-lg text-[20px] w-[200px] mt-[20px] font-semibold hover:shadow-inner' disabled={saving}>{saving?"Saving...":"Save Profile"}</button>
+        <input type="text" placeholder="Enter your name" className='w-[90%] h-[50px] outline-none border-2 border-[#3B82F6] px-[20px] py-[10px] bg-[white] rounded-lg shadow-gray-400 shadow-lg text-gray-700 text-[19px]' onChange={(e)=>setName(e.target.value)} value={name}/>
+        <input type="text"  readOnly className='w-[90%] h-[50px] outline-none border-2 border-[#3B82F6] px-[20px] py-[10px] bg-[white] rounded-lg shadow-gray-400 shadow-lg text-gray-400 text-[19px]' value={userData?.userName}/>
+        <input type="email" readOnly className='w-[90%] h-[50px] outline-none border-2 border-[#3b82F6] px-[20px] py-[10px] bg-[white] rounded-lg shadow-gray-400 shadow-lg text-gray-400 text-[19px]' value={userData?.email}/>
+        <button className='px-[20px] py-[10px] bg-[#3B82F6] rounded-2xl shadow-gray-400 shadow-lg text-[20px] w-[200px] mt-[20px] font-semibold hover:shadow-inner' disabled={saving}>{saving?"Saving...":"Save Profile"}</button>
      </form>
     </div>
   )
